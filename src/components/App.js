@@ -1,5 +1,6 @@
 import "../styles/App.css";
-import { Link } from "react-router-dom";
+import { Link, Switch, Route } from "react-router-dom";
+import Home from "../components/Home";
 import logo from "../images/dog.png";
 
 const App = () => {
@@ -13,6 +14,9 @@ const App = () => {
           <h1>Animal Top Trumps</h1>
         </Link>
       </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
     </div>
   );
 };

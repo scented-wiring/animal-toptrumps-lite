@@ -1,0 +1,37 @@
+#Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.buttons button {
+  height: 75px;
+  width: 220px;
+  background-color: #009fd6;
+  margin: 25px 25px 25px 15px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 30px;
+  border: 2px black solid;
+  transition: all 0.4s ease 0s;
+  box-shadow: 5px 5px #004742;
+}
+
+.buttons button:hover {
+  background: #385bac;
+  color: white;
+  transition: all 0.4s ease 0s;
+  outline: 0;
+}
+
+footer {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  padding: 10px;
+}
+
+footer img {
+  margin-left: 10px;
+}
