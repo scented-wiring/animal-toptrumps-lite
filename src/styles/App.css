@@ -1,0 +1,17 @@
+#App {
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #73ed8f;
+  padding: 15px 0;
+  border-bottom: 2px solid black;
+}
+
+#App #logo {
+  margin-right: 5px;
+}
