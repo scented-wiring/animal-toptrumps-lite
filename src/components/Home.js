@@ -16,11 +16,8 @@ const Home = () => {
         <Link to="/play">
           <button type="button">Play</button>
         </Link>
-        <Link to="/browsecards">
-          <button type="button">Browse Cards</button>
-        </Link>
-        <Link to="/instructions">
-          <button type="button">Instructions</button>
+        <Link to="/editdeck">
+          <button type="button">Edit Deck</button>
         </Link>
       </div>
       <footer>
