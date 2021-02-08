@@ -33,7 +33,6 @@
     font-size: 20px;
     height: 400px;
     width: 200px;
-    box-shadow: 8px 8px #004742;
   }
 }
 
@@ -51,15 +50,11 @@
     margin-bottom: 15px;
     font-family: "Montserrat", sans-serif;
     border: 2px black solid;
-    box-shadow: 4px 4px #004742;
+    box-shadow: 2px 2px #004742;
   }
 
   #selectCards-drop:focus {
     outline: none;
-  }
-
-  .default-message {
-    font-size: 20px;
   }
 }
 
