@@ -53,8 +53,8 @@ const Card = ({
             id="photo"
             src={photo}
             alt={name + " photo"}
-            height="150px"
-            width="225px"
+            height="167px"
+            width="250px"
           />
           <div className="stats">
             <div className="stat-name1">

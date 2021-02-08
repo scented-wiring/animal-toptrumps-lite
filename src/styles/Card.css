@@ -46,8 +46,8 @@
 .stat-name1 {
   display: flex;
   align-items: center;
-  height: 35px;
-  font-size: 22px;
+  height: 30px;
+  font-size: 20px;
   padding-left: 20px;
   background: #00d7b0;
   border-top: 2px solid black;
@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
+  height: 30px;
   width: 60px;
   background: #a2e893;
   border-left: 2px solid black;
@@ -68,8 +68,8 @@
 .stat-name2 {
   display: flex;
   align-items: center;
-  height: 35px;
-  font-size: 22px;
+  height: 30px;
+  font-size: 20px;
   padding-left: 20px;
   background: #a2e893;
 }
@@ -79,7 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
+  height: 30px;
   width: 60px;
   background: #00d7b0;
   border-left: 2px solid black;

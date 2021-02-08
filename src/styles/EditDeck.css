@@ -39,7 +39,6 @@
   }
 
   #selectCards-drop {
-    height: 30px;
     width: 200px;
     display: inline;
     margin-bottom: 15px;
@@ -50,6 +49,63 @@
 
   #selectCards-drop:focus {
     outline: none;
+  }
+
+  #EditDeck .Card,
+  #EditDeck .Card-border {
+    height: 400px;
+    width: 260px;
+  }
+
+  #EditDeck .name {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  #EditDeck .aka {
+    font-size: 20px;
+  }
+
+  #EditDeck .alignment {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  #EditDeck #photo {
+    margin: 5px auto 10px auto;
+    height: 165px;
+    width: 220px;
+  }
+
+  #EditDeck .stat-name1,
+  #EditDeck .stat-name2 {
+    padding-left: 12px;
+    height: 25px;
+    font-size: 18px;
+  }
+
+  #EditDeck .stat1,
+  #EditDeck .stat2 {
+    height: 25px;
+    width: 45px;
+  }
+
+  #EditDeck .footer {
+    font-size: 8px;
+    margin-top: 4px;
+  }
+
+  #EditDeck .loading {
+    padding: 25px 0;
+    height: 30px;
+    width: 120px;
+    margin: 10px auto 10px auto;
+    font-size: 15px;
+  }
+
+  #EditDeck .default-message {
+    margin-top: 50px;
+    font-size: 35px;
   }
 }
 
@@ -94,7 +150,7 @@
   }
 
   #EditDeck .footer {
-    font-size: 8px;
+    font-size: 7px;
     margin-top: 4px;
   }
 
@@ -104,5 +160,10 @@
     width: 120px;
     margin: 10px auto 10px auto;
     font-size: 15px;
+  }
+
+  #EditDeck .default-message {
+    margin-top: 50px;
+    font-size: 35px;
   }
 }
