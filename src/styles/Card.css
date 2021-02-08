@@ -50,7 +50,8 @@
   font-size: 22px;
   padding-left: 20px;
   background: #00d7b0;
-  border: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .stat1 {
@@ -71,8 +72,6 @@
   font-size: 22px;
   padding-left: 20px;
   background: #a2e893;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
 }
 
 .stat2 {
@@ -138,126 +137,4 @@
 
 .photographer-link {
   text-decoration: underline;
-}
-
-@media only screen and (max-width: 1100px) {
-  .Card-border {
-    height: 380px;
-    width: 250px;
-  }
-
-  .Card {
-    height: 380px;
-    width: 250px;
-  }
-
-  #photo {
-    margin: 10px auto 10px auto;
-  }
-
-  .name {
-    font-size: 35px;
-  }
-
-  .aka {
-    font-size: 17px;
-  }
-
-  .alignment {
-    font-size: 13px;
-  }
-
-  .stat-name1,
-  .stat-name2 {
-    height: 25px;
-    font-size: 18px;
-  }
-
-  .stat1,
-  .stat2 {
-    height: 25px;
-    width: 60px;
-  }
-
-  .footer {
-    font-size: 10px;
-  }
-
-  .default-message {
-    margin-top: 70px;
-    text-align: center;
-    font-family: "Staatliches", sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-  }
-
-  .hidden-card {
-    height: 360px;
-    width: 230px;
-    box-shadow: 8px 8px #004742;
-  }
-
-  #card-back-text {
-    margin: 10px 0 10px 0;
-    font-size: 60px;
-  }
-
-  #card-back-logo {
-    height: 80px;
-    width: 80px;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .Card,
-  .Card-border {
-    height: 268px;
-    width: 175px;
-  }
-
-  .Card-border {
-    box-shadow: 2px 2px #004742;
-  }
-
-  .name {
-    font-size: 25px;
-    margin-top: 5px;
-  }
-
-  .aka {
-    font-size: 14px;
-  }
-
-  .alignment {
-    font-size: 11px;
-  }
-
-  #photo {
-    margin: 5px auto 5px auto;
-    height: 90px;
-    width: 120px;
-  }
-
-  .stat-name1,
-  .stat-name2 {
-    padding-left: 8px;
-    height: 20px;
-    font-size: 15px;
-  }
-
-  .stat1,
-  .stat2 {
-    height: 20px;
-    width: 30px;
-  }
-
-  .footer {
-    font-size: 8px;
-    margin-top: 2px;
-  }
-
-  .default-message {
-    margin-top: 70px;
-    font-size: 30px;
-  }
 }
