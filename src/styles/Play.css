@@ -42,6 +42,10 @@
   text-shadow: 3px 3px black;
 }
 
+.won-card {
+  position: absolute;
+}
+
 @media only screen and (max-width: 930px) {
   .score,
   .score-active {

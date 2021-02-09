@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { cards } from "../cards/index";
@@ -165,11 +166,20 @@ const Play = () => {
           Player: {playerCards.length}{" "}
           {playerCards.length === 1 ? `card` : `cards`}
         </div>
-        {showWonCard === "Player" ? (
-          <Card {...playerCards.find((card) => card.name === lostCard)} /> // Displays the card that the player has won
-        ) : (
-          <Card {...playerCard} deckSize={playerCards.length} />
+        {showWonCard === "Player" && (
+          <motion.div
+            initial={{ x: 200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="won-card">
+              <Card {...playerCards.find((card) => card.name === lostCard)} />
+            </div>
+          </motion.div>
         )}
+        <div className="current-card">
+          <Card {...playerCard} deckSize={playerCards.length} />
+        </div>
       </div>
     );
   };
@@ -181,11 +191,20 @@ const Play = () => {
           Computer: {computerCards.length}{" "}
           {computerCards.length === 1 ? `card` : `cards`}
         </div>
-        {showWonCard === "Computer" ? (
-          <Card {...computerCards.find((card) => card.name === lostCard)} /> // Displays the card that the player has won
-        ) : (
-          <Card {...computerCard} deckSize={computerCards.length} hide={true} />
+        {showWonCard === "Computer" && (
+          <motion.div
+            initial={{ x: -200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="won-card">
+              <Card {...computerCards.find((card) => card.name === lostCard)} />
+            </div>
+          </motion.div>
         )}
+        <div className="current-card">
+          <Card {...computerCard} deckSize={computerCards.length} hide={true} />
+        </div>
       </div>
     );
   };
