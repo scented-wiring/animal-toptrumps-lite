@@ -39,7 +39,7 @@
 }
 
 #photo {
-  border: 3px solid black;
+  border: 2px solid black;
   margin: 0 auto 20px auto;
 }
 
@@ -130,7 +130,7 @@
 .no-cards {
   display: flex;
   flex-direction: column;
-  height: 460px;
+  height: 440px;
   width: 300px;
   padding: 10px;
 }

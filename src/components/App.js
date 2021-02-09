@@ -1,13 +1,11 @@
-import "../styles/App.css";
-import { Link, Switch, Route } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import Home from "../components/Home";
 import logo from "../images/dog.png";
-import { useState } from "react";
-import EditDeck from "./EditDeck";
+import "../styles/App.css";
+import BrowseCards from "./BrowseCards";
+import Play from "./Play";
 
 const App = () => {
-  const [deck, setDeck] = useState([]);
-
   return (
     <div id="App">
       <div id="title">
@@ -20,7 +18,8 @@ const App = () => {
       </div>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/editdeck" component={EditDeck} />
+        <Route exact path="/play" component={Play} />
+        <Route exact path="/browsecards" component={BrowseCards} />
       </Switch>
     </div>
   );

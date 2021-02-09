@@ -53,7 +53,7 @@ const Card = ({
             id="photo"
             src={photo}
             alt={name + " photo"}
-            height="167px"
+            height="168px"
             width="250px"
           />
           <div className="stats">

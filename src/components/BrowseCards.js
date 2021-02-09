@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { cards } from "../cards/index";
+import "../styles/BrowseCards.css";
 import Card from "./Card";
-import "../styles/EditDeck.css";
 
-const EditDeck = () => {
+const BrowseCards = () => {
   const initialState = {
     alert: {
       message: "",
@@ -56,4 +56,4 @@ const EditDeck = () => {
   );
 };
 
-export default EditDeck;
+export default BrowseCards;

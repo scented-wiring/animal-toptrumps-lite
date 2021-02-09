@@ -1,0 +1,110 @@
+.game-ui {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.status {
+  font-family: "Staatliches", sans-serif;
+  text-decoration: underline;
+  font-size: 40px;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+.message {
+  font-size: 25px;
+  width: 450px;
+}
+
+.field {
+  font-family: "Staatliches", sans-serif;
+  font-size: 50px;
+  transition: all 0.4s ease 0s;
+  margin: 10px 0;
+}
+
+.field:hover {
+  color: red;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+  text-shadow: 3px 3px black;
+}
+
+.tie {
+  font-size: 30px;
+  font-family: "Staatliches", sans-serif;
+}
+
+.game-ui .buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-ui .buttons button {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .status {
+    font-size: 40px;
+  }
+
+  .message {
+    font-size: 22px;
+  }
+
+  .field {
+    font-family: "Staatliches", sans-serif;
+    font-size: 40px;
+  }
+
+  .field:hover {
+    text-shadow: 2px 2px black;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .status {
+    font-size: 35px;
+  }
+
+  .message {
+    font-size: 20px;
+  }
+
+  #fields {
+    display: flex;
+    justify-content: center;
+  }
+
+  .field {
+    font-family: "Staatliches", sans-serif;
+    font-size: 30px;
+  }
+
+  .field:hover {
+    text-shadow: 1px 1px black;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .status {
+    font-size: 30px;
+  }
+
+  .tie {
+    font-size: 25px;
+    font-family: "Staatliches", sans-serif;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+
+  .field {
+    font-size: 25px;
+    margin: 0 5px 0 5px;
+  }
+}
