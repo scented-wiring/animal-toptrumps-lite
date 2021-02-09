@@ -14,8 +14,9 @@
 }
 
 .message {
+  align-self: center;
   font-size: 25px;
-  width: 450px;
+  width: 300px;
 }
 
 .field {
@@ -46,13 +47,14 @@
   margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1005px) {
   .status {
     font-size: 40px;
   }
 
   .message {
-    font-size: 22px;
+    font-size: 18px;
+    width: 220px;
   }
 
   .field {
@@ -63,48 +65,48 @@
   .field:hover {
     text-shadow: 2px 2px black;
   }
+
+  .tie {
+    font-size: 20px;
+  }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 690px) {
+  .game-ui {
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 0 10px;
+  }
+
   .status {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .message {
-    font-size: 20px;
+    width: auto;
   }
 
   #fields {
     display: flex;
-    justify-content: center;
+    align-self: center;
   }
 
   .field {
-    font-family: "Staatliches", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
+    margin: 0 10px;
   }
 
-  .field:hover {
-    text-shadow: 1px 1px black;
+  .game-ui .buttons button {
+    margin-bottom: 8px;
   }
 }
 
-@media only screen and (max-width: 420px) {
-  .status {
-    font-size: 30px;
-  }
-
-  .tie {
-    font-size: 25px;
-    font-family: "Staatliches", sans-serif;
-  }
-
+@media only screen and (max-width: 350px) {
   .message {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .field {
-    font-size: 25px;
-    margin: 0 5px 0 5px;
+    margin: 0 5px;
   }
 }

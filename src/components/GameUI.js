@@ -26,7 +26,7 @@ const GameUI = ({
   } else if (win === "Tie") {
     //if action results in tie
     status = `${win}!`;
-    message = `Top player and computer cards added to tie deck. ${tieCardsLength} tie cards to be won next round!`;
+    message = `Top player and computer cards added to tie deck.`;
   } else if (win) {
     //if action results in win
     status = `${win} wins!`;

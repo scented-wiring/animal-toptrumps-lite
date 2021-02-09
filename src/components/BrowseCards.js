@@ -19,8 +19,8 @@ const BrowseCards = () => {
   const [card, setCard] = useState(initialState.card);
 
   return (
-    <div id="EditDeck">
-      <h2>Edit Deck</h2>
+    <div id="BrowseCards">
+      <h2>Browse Cards</h2>
       <div id="display">
         <select
           name="selectCards-drop"

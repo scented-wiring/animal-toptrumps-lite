@@ -28,6 +28,26 @@ a {
   text-decoration: none;
 }
 
+button {
+  align-self: center;
+  height: 75px;
+  width: 220px;
+  background-color: #009fd6;
+  margin: 0 15px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 30px;
+  border: 2px black solid;
+  transition: all 0.4s ease 0s;
+  box-shadow: 5px 5px #004742;
+}
+
+button:hover {
+  background: #385bac;
+  color: white;
+  transition: all 0.4s ease 0s;
+  outline: 0;
+}
+
 .back {
   font-size: 25px;
   font-family: "Staatliches", sans-serif;
