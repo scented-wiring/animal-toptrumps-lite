@@ -8,6 +8,8 @@ import "../styles/Play.css";
 
 const Play = () => {
   const [width, setWidth] = useState(window.innerWidth);
+  const [xPosition, setXPosition] = useState(0);
+  const [speed, setSpeed] = useState(0);
 
   const [playerCards, setPlayerCards] = useState([]);
   const [playerCard, setPlayerCard] = useState({});
@@ -147,6 +149,7 @@ const Play = () => {
     setPlayerCard(playerCards[0]);
     setComputerCard(computerCards[0]);
     !playerCards.length && !computerCards.length && setNoCards(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -159,6 +162,25 @@ const Play = () => {
     };
   });
 
+  useEffect(() => {
+    if (width >= 1106) {
+      setXPosition(600);
+      setSpeed(0.7);
+    } else if (width >= 760) {
+      setXPosition(475);
+      setSpeed(0.5);
+    } else if (width >= 474) {
+      setXPosition(181);
+      setSpeed(0.4);
+    } else if (width >= 386) {
+      setXPosition(151);
+      setSpeed(0.4);
+    } else {
+      setXPosition(116);
+      setSpeed(0.3);
+    }
+  }, [showWonCard, width]);
+
   const renderPlayerDeck = () => {
     return (
       <div className="player">
@@ -168,12 +190,23 @@ const Play = () => {
         </div>
         {showWonCard === "Player" && (
           <motion.div
-            initial={{ x: 200 }}
+            initial={{ x: xPosition }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: speed }}
           >
-            <div className="won-card">
+            <div className="card-animation">
               <Card {...playerCards.find((card) => card.name === lostCard)} />
+            </div>
+          </motion.div>
+        )}
+        {win === "Tie" && (
+          <motion.div
+            initial={{ x: 0 }}
+            animate={{ x: -200, opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <div className="card-animation">
+              <Card {...tieCards[0]} />
             </div>
           </motion.div>
         )}
@@ -193,12 +226,23 @@ const Play = () => {
         </div>
         {showWonCard === "Computer" && (
           <motion.div
-            initial={{ x: -200 }}
+            initial={{ x: -Math.abs(xPosition) }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: speed }}
           >
-            <div className="won-card">
+            <div className="card-animation">
               <Card {...computerCards.find((card) => card.name === lostCard)} />
+            </div>
+          </motion.div>
+        )}
+        {win === "Tie" && (
+          <motion.div
+            initial={{ x: 0 }}
+            animate={{ x: 200, opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <div className="card-animation">
+              <Card {...tieCards[1]} />
             </div>
           </motion.div>
         )}

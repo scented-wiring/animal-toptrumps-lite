@@ -10,16 +10,16 @@
 .game {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
 .player {
-  margin: 0 5px 0 20px;
+  margin-right: 20px;
 }
 
 .computer {
-  margin: 0 20px 0 5px;
+  margin-left: 20px;
 }
 
 .score {
@@ -42,11 +42,11 @@
   text-shadow: 3px 3px black;
 }
 
-.won-card {
+.card-animation {
   position: absolute;
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 1005px) {
   .score,
   .score-active {
     font-size: 25px;
@@ -131,6 +131,14 @@
     margin: 0 8px;
     height: 26px;
     width: 100px;
+  }
+
+  .player {
+    margin-right: 5px;
+  }
+
+  .computer {
+    margin-left: 5px;
   }
 }
 

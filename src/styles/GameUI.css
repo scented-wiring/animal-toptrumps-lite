@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  width: 300px;
 }
 
 .status {
@@ -15,7 +16,7 @@
 
 .message {
   align-self: center;
-  font-size: 25px;
+  font-size: 30px;
   width: 300px;
 }
 
@@ -48,12 +49,20 @@
 }
 
 @media only screen and (max-width: 1005px) {
+  .game-ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 250px;
+  }
+
   .status {
     font-size: 40px;
   }
 
   .message {
-    font-size: 22px;
+    font-size: 18px;
     width: 220px;
   }
 
@@ -69,6 +78,13 @@
   .tie {
     font-size: 25px;
   }
+
+  .game button {
+    font-size: 25px;
+    margin: 0 8px;
+    height: 40px;
+    width: 100px;
+  }
 }
 
 @media only screen and (max-width: 690px) {
@@ -76,6 +92,7 @@
     justify-content: space-evenly;
     height: 100%;
     margin: 0 10px;
+    width: auto;
   }
 
   .status {
