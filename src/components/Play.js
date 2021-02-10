@@ -38,7 +38,7 @@ const Play = () => {
     winnerCards.push(winnerCards.splice(0, 1)[0]);
     winnerCards.push(loserCard);
     setWinnerCards(winnerCards);
-    setWinnerCard(winnerCards[0]);
+
     tieCards.length > 0 && setWinnerCards(winnerCards.concat(tieCards));
     if (playerWin) {
       setPlayerTurn(true);
@@ -102,6 +102,11 @@ const Play = () => {
   };
 
   const handleClearWin = () => {
+    if (win === "Player") {
+      setPlayerCard(playerCards[0]);
+    } else if (win === "Computer") {
+      setComputerCard(computerCards[0]);
+    }
     setWin(false);
     setShowWonCard("");
     if (win !== "Tie") {
@@ -190,7 +195,7 @@ const Play = () => {
         </div>
         {showWonCard === "Player" && tieCards.length > 0 && (
           <motion.div
-            initial={{ x: -200, opacity: 0 }}
+            initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: speed }}
           >
@@ -213,8 +218,8 @@ const Play = () => {
         {win === "Tie" && (
           <motion.div
             initial={{ x: 0 }}
-            animate={{ x: -200, opacity: 0 }}
-            transition={{ duration: 1 }}
+            animate={{ x: -50, opacity: 0 }}
+            transition={{ duration: speed }}
           >
             <div className="card-animation">
               <Card {...tieCards[0]} />
@@ -237,7 +242,7 @@ const Play = () => {
         </div>
         {showWonCard === "Computer" && tieCards.length > 0 && (
           <motion.div
-            initial={{ x: 200, opacity: 0 }}
+            initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: speed }}
           >
@@ -260,8 +265,8 @@ const Play = () => {
         {win === "Tie" && (
           <motion.div
             initial={{ x: 0 }}
-            animate={{ x: 200, opacity: 0 }}
-            transition={{ duration: 1 }}
+            animate={{ x: 50, opacity: 0 }}
+            transition={{ duration: speed }}
           >
             <div className="card-animation">
               <Card {...tieCards[1]} />
