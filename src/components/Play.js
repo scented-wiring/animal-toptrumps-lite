@@ -188,6 +188,17 @@ const Play = () => {
           Player: {playerCards.length}{" "}
           {playerCards.length === 1 ? `card` : `cards`}
         </div>
+        {showWonCard === "Player" && tieCards.length > 0 && (
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: speed }}
+          >
+            <div className="card-animation">
+              <Card {...tieCards[0]} />
+            </div>
+          </motion.div>
+        )}
         {showWonCard === "Player" && (
           <motion.div
             initial={{ x: xPosition }}
@@ -224,6 +235,17 @@ const Play = () => {
           Computer: {computerCards.length}{" "}
           {computerCards.length === 1 ? `card` : `cards`}
         </div>
+        {showWonCard === "Computer" && tieCards.length > 0 && (
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: speed }}
+          >
+            <div className="card-animation">
+              <Card {...tieCards[0]} />
+            </div>
+          </motion.div>
+        )}
         {showWonCard === "Computer" && (
           <motion.div
             initial={{ x: -Math.abs(xPosition) }}
