@@ -195,9 +195,9 @@ const Play = () => {
         </div>
         {showWonCard === "Player" && tieCards.length > 0 && (
           <motion.div
-            initial={{ x: -65, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            initial={{ y: -70, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}
           >
             <div className="card-animation">
               <Card {...tieCards[0]} />
@@ -217,8 +217,12 @@ const Play = () => {
         )}
         {win === "Tie" && (
           <motion.div
-            initial={{ x: 0 }}
-            animate={{ x: -20, opacity: 0 }}
+            initial={{ y: 0 }}
+            animate={{
+              y: -70,
+              opacity: 0,
+              transitionEnd: { display: "none" },
+            }}
             transition={{ duration: 1 }}
           >
             <div className="card-animation">
@@ -242,9 +246,9 @@ const Play = () => {
         </div>
         {showWonCard === "Computer" && tieCards.length > 0 && (
           <motion.div
-            initial={{ x: 65, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            initial={{ y: -70, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}
           >
             <div className="card-animation">
               <Card {...tieCards[0]} />
@@ -264,8 +268,12 @@ const Play = () => {
         )}
         {win === "Tie" && (
           <motion.div
-            initial={{ x: 0 }}
-            animate={{ x: 20, opacity: 0 }}
+            initial={{ y: 0 }}
+            animate={{
+              y: -70,
+              opacity: 0,
+              transitionEnd: { display: "none" },
+            }}
             transition={{ duration: 1 }}
           >
             <div className="card-animation">
