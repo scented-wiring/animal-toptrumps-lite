@@ -44,6 +44,12 @@
 
 .card-animation {
   position: absolute;
+  border-radius: 30px;
+  box-shadow: 0 0 8px 8px #fff;
+}
+
+.card-animation .Card-border {
+  box-shadow: none;
 }
 
 @media only screen and (max-width: 1005px) {
@@ -149,6 +155,10 @@
     width: 145px;
   }
 
+  .game .Card-border {
+    box-shadow: 3px 3px #004742;
+  }
+
   .game .aka {
     font-size: 12px;
   }
@@ -174,6 +184,7 @@
 
   .game .hidden-card {
     width: 125px;
+    box-shadow: 3px 3px #004742;
   }
 
   .score {
@@ -182,6 +193,16 @@
 
   .score-active {
     font-size: 20px;
+  }
+
+  .card-animation {
+    position: absolute;
+    border-radius: 30px;
+    box-shadow: 0 0 3px 3px #fff;
+  }
+
+  .card-animation .Card-border {
+    box-shadow: none;
   }
 }
 

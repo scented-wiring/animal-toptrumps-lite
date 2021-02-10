@@ -29,7 +29,6 @@ const Play = () => {
   const handleWinnerCards = (
     loserCard,
     winnerCards,
-    setWinnerCard,
     setWinnerCards,
     playerWin
   ) => {
@@ -80,23 +79,11 @@ const Play = () => {
       setWin("Tie");
     } else if (playerCard[field] > computerCard[field]) {
       //player win
-      handleWinnerCards(
-        computerCard,
-        playerCards,
-        setPlayerCard,
-        setPlayerCards,
-        true
-      );
+      handleWinnerCards(computerCard, playerCards, setPlayerCards, true);
       handleLoserCards(computerCards, setComputerCards, setComputerCard);
     } else {
       //computer win
-      handleWinnerCards(
-        playerCard,
-        computerCards,
-        setComputerCard,
-        setComputerCards,
-        false
-      );
+      handleWinnerCards(playerCard, computerCards, setComputerCards, false);
       handleLoserCards(playerCards, setPlayerCards, setPlayerCard);
     }
   };
@@ -231,7 +218,7 @@ const Play = () => {
           </motion.div>
         )}
         <div className="current-card">
-          <Card {...playerCard} deckSize={playerCards.length} />
+          <Card {...playerCard} win={win} deckSize={playerCards.length} />
         </div>
       </div>
     );
@@ -282,7 +269,12 @@ const Play = () => {
           </motion.div>
         )}
         <div className="current-card">
-          <Card {...computerCard} deckSize={computerCards.length} hide={true} />
+          <Card
+            {...computerCard}
+            win={win}
+            deckSize={computerCards.length}
+            hide={true}
+          />
         </div>
       </div>
     );

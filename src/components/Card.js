@@ -15,6 +15,7 @@ const Card = ({
   photo,
   photographer,
   link,
+  win,
 }) => {
   if (defaultText) {
     return (
