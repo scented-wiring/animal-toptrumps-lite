@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  height: 100%;
 }
 
 .player {
@@ -265,5 +266,61 @@
 
   .score-active {
     font-size: 17px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .game .Card,
+  .game .Card-border,
+  .game .no-cards {
+    height: 200px;
+  }
+
+  .game .name {
+    font-size: 18px;
+  }
+
+  .game .aka {
+    font-size: 10px;
+  }
+
+  .game .alignment {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+
+  .game #photo {
+    margin: 0 auto 5px auto;
+    height: 66px;
+    width: 88px;
+  }
+
+  .game .stat-name1,
+  .game .stat-name2 {
+    height: 13px;
+    font-size: 10px;
+  }
+
+  .game .stat1,
+  .game .stat2 {
+    height: 13px;
+  }
+
+  .game .footer {
+    margin: 3px 3px 0 3px;
+  }
+
+  .game .hidden-card {
+    height: 180px;
+  }
+
+  .game #card-back-text {
+    font-size: 30px;
+  }
+
+  .game #card-back-logo {
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
   }
 }
