@@ -99,6 +99,10 @@
     font-size: 30px;
   }
 
+  .tie {
+    font-size: 20px;
+  }
+
   .message {
     width: auto;
   }
@@ -119,11 +123,26 @@
 }
 
 @media only screen and (max-width: 350px) {
+  .status {
+    font-size: 22px;
+  }
+
+  .tie {
+    font-size: 17px;
+  }
+
   .message {
     font-size: 15px;
   }
 
   .field {
+    font-size: 22px;
     margin: 0 5px;
+  }
+
+  .game-ui .buttons button {
+    height: 27px;
+    font-size: 13px;
+    margin-bottom: 8px;
   }
 }
