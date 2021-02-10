@@ -2,20 +2,30 @@ import dog from "../images/cards/dog.jpeg";
 import cat from "../images/cards/cat.jpeg";
 import goldfish from "../images/cards/goldfish.jpeg";
 import sheep from "../images/cards/sheep.jpeg";
+import rabbit from "../images/cards/rabbit.jpeg";
+import pig from "../images/cards/pig.jpeg";
 import weevil from "../images/cards/weevil.jpeg";
 import snake from "../images/cards/snake.jpeg";
 import elephant from "../images/cards/elephant.jpeg";
 import whale from "../images/cards/whale.jpeg";
+import piranha from "../images/cards/piranha.jpeg";
 import lion from "../images/cards/lion.jpeg";
+import tiger from "../images/cards/tiger.jpeg";
 import mongoose from "../images/cards/mongoose.jpeg";
 import parrot from "../images/cards/parrot.jpeg";
+import flamingo from "../images/cards/flamingo.jpeg";
 import toad from "../images/cards/toad.jpeg";
 import giraffe from "../images/cards/giraffe.jpeg";
 import owl from "../images/cards/owl.jpeg";
 import robin from "../images/cards/robin.jpeg";
+import swan from "../images/cards/swan.jpeg";
+import pigeon from "../images/cards/pigeon.jpeg";
+import bee from "../images/cards/bee.jpeg";
 import badger from "../images/cards/badger.jpeg";
 import baboon from "../images/cards/baboon.jpeg";
+import kangaroo from "../images/cards/kangaroo.jpeg";
 import ladybird from "../images/cards/ladybird.jpeg";
+import monkey from "../images/cards/monkey.jpeg";
 import stagbeetle from "../images/cards/stagbeetle.jpeg";
 import trex from "../images/cards/trex.jpeg";
 
@@ -65,6 +75,28 @@ const cards = [
     link: "https://unsplash.com/@samdc",
   },
   {
+    name: "Rabbit",
+    aka: "Thumper",
+    cool: 6,
+    largeness: 3,
+    handsome: 9,
+    alignment: "True Neutral",
+    photo: rabbit,
+    photographer: "Gavin Allanwood",
+    link: "https://unsplash.com/@gavla",
+  },
+  {
+    name: "Piglet",
+    aka: "Handsome chap",
+    cool: 8,
+    largeness: 4,
+    handsome: 10,
+    alignment: "Lawful Good",
+    photo: pig,
+    photographer: "Forest Simon",
+    link: "https://unsplash.com/@forest_ms",
+  },
+  {
     name: "Weevil",
     aka: "Tiny lad",
     cool: 1,
@@ -109,15 +141,37 @@ const cards = [
     link: "https://unsplash.com/@toddcravens",
   },
   {
+    name: "Piranha",
+    aka: "Lil' bitey",
+    cool: 9,
+    largeness: 2,
+    handsome: 5,
+    alignment: "Chaotic Neutral",
+    photo: piranha,
+    photographer: "Anton Darius",
+    link: "https://unsplash.com/@thesollers",
+  },
+  {
     name: "Lion",
     aka: "The King",
     cool: 8,
-    largeness: 6,
+    largeness: 7,
     handsome: 10,
     alignment: "Lawful Neutral",
     photo: lion,
     photographer: "Francesco De Tommaso",
     link: "https://unsplash.com/@detpho",
+  },
+  {
+    name: "Tiger",
+    aka: "The Boss",
+    cool: 9,
+    largeness: 7,
+    handsome: 9,
+    alignment: "Lawful Neutral",
+    photo: tiger,
+    photographer: "A G",
+    link: "https://unsplash.com/@agord70345203222008",
   },
   {
     name: "Mongoose",
@@ -140,6 +194,17 @@ const cards = [
     photo: parrot,
     photographer: "Aaron Katz",
     link: "https://unsplash.com/@pendraggon87",
+  },
+  {
+    name: "Flamingo",
+    aka: "Pinky",
+    cool: 8,
+    largeness: 5,
+    handsome: 9,
+    alignment: "Lawful Neutral",
+    photo: flamingo,
+    photographer: "Chris Stenger",
+    link: "https://unsplash.com/@chrisstenger",
   },
   {
     name: "Toad",
@@ -178,7 +243,7 @@ const cards = [
     name: "Robin",
     aka: "Tweeter",
     cool: 6,
-    largeness: 1,
+    largeness: 2,
     handsome: 10,
     alignment: "Chaotic Evil",
     photo: robin,
@@ -186,8 +251,41 @@ const cards = [
     link: "https://unsplash.com/@chris23",
   },
   {
+    name: "Swan",
+    aka: "Graceful but deadly",
+    cool: 8,
+    largeness: 5,
+    handsome: 10,
+    alignment: "Neutral Evil",
+    photo: swan,
+    photographer: "Erik van Dijk",
+    link: "https://unsplash.com/@erikvandijk",
+  },
+  {
+    name: "Pigeon",
+    aka: "Nice dude, bad PR",
+    cool: 7,
+    largeness: 3,
+    handsome: 8,
+    alignment: "Chaotic Neutral",
+    photo: pigeon,
+    photographer: "sanjiv nayak",
+    link: "https://unsplash.com/@sanjiv222",
+  },
+  {
+    name: "Bee",
+    aka: "Buzzing friend",
+    cool: 8,
+    largeness: 1,
+    handsome: 6,
+    alignment: "Chaotic Good",
+    photo: bee,
+    photographer: "Dmitry Grigoriev",
+    link: "https://unsplash.com/@at8eqeq3",
+  },
+  {
     name: "Badger",
-    aka: "Stripy Tough Guy",
+    aka: "Stripy tough guy",
     cool: 7,
     largeness: 4,
     handsome: 7,
@@ -208,6 +306,17 @@ const cards = [
     link: "https://unsplash.com/@maxvdo",
   },
   {
+    name: "Kangaroo",
+    aka: "Skippy",
+    cool: 8,
+    largeness: 7,
+    handsome: 8,
+    alignment: "Neutral Good",
+    photo: kangaroo,
+    photographer: "Mark Stoop",
+    link: "https://unsplash.com/@markstoop",
+  },
+  {
     name: "Ladybird",
     aka: "Spotty",
     cool: 3,
@@ -217,6 +326,17 @@ const cards = [
     photo: ladybird,
     photographer: "Vincent van Zalinge",
     link: "https://unsplash.com/@vincentvanzalinge",
+  },
+  {
+    name: "Monkey",
+    aka: "Cheeky",
+    cool: 9,
+    largeness: 4,
+    handsome: 7,
+    alignment: "Chaotic Good",
+    photo: monkey,
+    photographer: "Jamie Haughton",
+    link: "https://unsplash.com/@haughters",
   },
   {
     name: "Stag Beetle",
@@ -231,7 +351,7 @@ const cards = [
   },
   {
     name: "T-Rex",
-    aka: "Wuh-oh",
+    aka: "Big trouble",
     cool: 10,
     largeness: 10,
     handsome: 5,
