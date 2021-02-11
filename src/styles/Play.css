@@ -99,8 +99,8 @@
   }
 
   .game .footer {
-    font-size: 7px;
-    margin: 5px 3px 0 3px;
+    font-size: 6px;
+    margin: 6px 3px 0 3px;
   }
 
   .game .hidden-card {
@@ -246,7 +246,6 @@
   }
 
   .game .footer {
-    font-size: 7px;
     margin-top: 4px;
   }
 

@@ -50,10 +50,6 @@
 
 @media only screen and (max-width: 1005px) {
   .game-ui {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
     width: 250px;
   }
 
@@ -90,7 +86,6 @@
 @media only screen and (max-width: 690px) {
   .game-ui {
     justify-content: space-evenly;
-    height: 100%;
     margin: 0 10px;
     width: auto;
   }
