@@ -298,7 +298,7 @@ const Play = () => {
   };
 
   const arrangeDisplay = () => {
-    if (width > 690) {
+    if (width > 705) {
       return (
         <div className="game">
           {renderPlayerDeck()}

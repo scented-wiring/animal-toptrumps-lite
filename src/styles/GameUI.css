@@ -48,7 +48,7 @@
   margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 1005px) {
+@media only screen and (max-width: 1020px) {
   .game-ui {
     width: 250px;
   }
@@ -83,7 +83,7 @@
   }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 705px) {
   .game-ui {
     align-self: center;
     justify-content: space-evenly;
@@ -118,7 +118,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 365px) {
   .game-ui {
     width: 270px;
   }

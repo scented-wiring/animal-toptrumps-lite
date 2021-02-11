@@ -52,7 +52,7 @@
   box-shadow: none;
 }
 
-@media only screen and (max-width: 1005px) {
+@media only screen and (max-width: 1020px) {
   .score,
   .score-active {
     font-size: 25px;
@@ -119,11 +119,12 @@
   }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 705px) {
   .game {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    width: 350px;
   }
 
   .mobile-cards {
@@ -149,7 +150,11 @@
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 440px) {
+  .game {
+    width: 290px;
+  }
+
   .game .Card,
   .game .Card-border,
   .game .no-cards {
@@ -207,7 +212,11 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 365px) {
+  .game {
+    width: 220px;
+  }
+
   .game .Card,
   .game .Card-border,
   .game .no-cards {
