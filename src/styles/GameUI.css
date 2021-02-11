@@ -86,6 +86,7 @@
 @media only screen and (max-width: 690px) {
   .game-ui {
     justify-content: space-evenly;
+    height: 100%;
     margin: 0 10px;
     width: auto;
   }
