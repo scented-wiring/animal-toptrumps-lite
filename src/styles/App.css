@@ -36,3 +36,15 @@
     margin-right: 0;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  #title {
+    padding: 5px 0;
+  }
+
+  #logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+}

@@ -123,6 +123,10 @@
 }
 
 @media only screen and (max-width: 350px) {
+  .game-ui {
+    width: 270px;
+  }
+
   .status {
     font-size: 22px;
   }
