@@ -36,14 +36,3 @@
     margin-right: 0;
   }
 }
-
-@media only screen and (max-width: 430px) and (max-height: 610px) {
-  #title {
-    padding: 5px 0;
-  }
-
-  #logo {
-    width: 25px;
-    height: 25px;
-  }
-}
