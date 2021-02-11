@@ -85,10 +85,10 @@
 
 @media only screen and (max-width: 690px) {
   .game-ui {
+    align-self: center;
     justify-content: space-evenly;
     height: 100%;
-    margin: 0 10px;
-    width: auto;
+    width: 100%;
   }
 
   .status {
