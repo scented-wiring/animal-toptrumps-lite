@@ -1,6 +1,6 @@
 # Animal Top Trumps Lite
 
-Battle against a computer AI using a deck of 30 Top Trumps, randomly shuffled and dealt to each player at the start of every game. A simpler and scaled down version of my[Animal Top Trumps](https://github.com/scented-wiring/animal-top-trumps) project.
+Battle against a computer AI using a deck of 30 Top Trumps, randomly shuffled and dealt to each player at the start of every game. A simpler and scaled down version of my [Animal Top Trumps](https://github.com/scented-wiring/animal-top-trumps) project.
 
 Play it on [heroku](https://animaltoptrumps-lite.herokuapp.com/)!
 
