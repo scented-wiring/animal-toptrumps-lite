@@ -8,11 +8,11 @@ Play it on [heroku](https://animaltoptrumps-lite.herokuapp.com/)!
 
 ## Desktop
 
-![Desktop screenshot](https://github.com/scented-wiring/animal-top-trumps/blob/master/readme_screenshots/desktop.png)
+![Desktop screenshot](https://github.com/scented-wiring/animal-toptrumps-lite/blob/master/readme_screenshots/desktop.png)
 
 ## Mobile
 
-![Mobile screenshot](https://github.com/scented-wiring/animal-top-trumps/blob/master/readme_screenshots/mobile.png)
+![Mobile screenshot](https://github.com/scented-wiring/animal-toptrumps-lite/blob/master/readme_screenshots/mobile.png)
 
 # Built with
 
