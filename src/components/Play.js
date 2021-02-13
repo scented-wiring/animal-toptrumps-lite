@@ -24,7 +24,6 @@ const Play = () => {
   const [tieCards, setTieCards] = useState([]);
   const [win, setWin] = useState("");
   const [gameWinner, setGameWinner] = useState("");
-  const [noCards, setNoCards] = useState(false);
 
   const handleWinnerCards = (
     loserCard,
@@ -140,7 +139,6 @@ const Play = () => {
     deal(shuffle(cards));
     setPlayerCard(playerCards[0]);
     setComputerCard(computerCards[0]);
-    !playerCards.length && !computerCards.length && setNoCards(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -292,7 +290,6 @@ const Play = () => {
         gameWinner={gameWinner}
         tieCards={tieCards}
         tieCardsLength={tieCards.length}
-        noCards={noCards}
       />
     );
   };

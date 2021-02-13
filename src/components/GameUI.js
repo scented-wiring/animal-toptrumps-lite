@@ -11,15 +11,10 @@ const GameUI = ({
   gameWinner,
   tieCards,
   tieCardsLength,
-  noCards,
 }) => {
   let status, message;
 
-  if (noCards) {
-    //if no cards in deck
-    status = "No cards found";
-    message = 'Go to "Create Cards" from the menu to add cards to your deck.';
-  } else if (gameWinner) {
+  if (gameWinner) {
     //if game is over
     status = `${gameWinner} wins the game!`;
     message = "GAME OVER";
@@ -75,7 +70,7 @@ const GameUI = ({
           OK
         </button>
       )}
-      {playerTurn && !noCards && !win && !gameWinner && (
+      {playerTurn && !win && !gameWinner && (
         <div id="fields">
           <div className="field" onClick={() => playField("cool")}>
             Cool
